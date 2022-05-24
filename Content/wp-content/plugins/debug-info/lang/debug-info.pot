@@ -1,0 +1,126 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Debug Info\n"
+"POT-Creation-Date: 2019-03-14 12:35-0700\n"
+"PO-Revision-Date: 2019-03-14 12:35-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: debug-info.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: debug-info.php:73
+msgid "This information is not available."
+msgstr ""
+
+#: debug-info.php:94
+msgid "Unversioned"
+msgstr ""
+
+#: debug-info.php:123
+msgid " version "
+msgstr ""
+
+#: debug-info.php:127
+msgid "WordPress Version: "
+msgstr ""
+
+#: debug-info.php:128
+msgid "Current WordPress Theme: "
+msgstr ""
+
+#: debug-info.php:129
+msgid "Theme Author: "
+msgstr ""
+
+#: debug-info.php:130
+msgid "Theme URI: "
+msgstr ""
+
+#: debug-info.php:131
+msgid "PHP Version: "
+msgstr ""
+
+#: debug-info.php:132
+msgid "MySQL Version: "
+msgstr ""
+
+#: debug-info.php:133
+msgid "Apache Version: "
+msgstr ""
+
+#: debug-info.php:134
+msgid "Active Plugins: "
+msgstr ""
+
+#: options.php:11
+msgid "WordPress Debug Info"
+msgstr ""
+
+#: options.php:12
+msgid ""
+"Below is some information about your current WordPress and server setup. "
+"This information may be useful for your technical support, website "
+"developers, and plugin or theme developers who need to diagnose problems on "
+"your site."
+msgstr ""
+
+#: options.php:14
+msgid ""
+"For more detailed PHP server related information, click the Show Details "
+"link below."
+msgstr ""
+
+#: options.php:15
+msgid "Show Details"
+msgstr ""
+
+#: options.php:16
+msgid "Hide Details"
+msgstr ""
+
+#: options.php:20
+msgid ""
+"If this plugin has helped you out at all, please consider making a donation "
+"to encourage future updates.<br />Your generosity is appreciated!"
+msgstr ""
+
+#: options.php:28
+#, php-format
+msgid ""
+"To report any issues with this plugin, please visit the <a href=\"%s"
+"\">support page on WordPress.org</a>."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Debug Info"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://amplifyplugins.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A plugin to display your server's PHP info and WordPress environment data "
+"for debugging purposes."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Scott DeLuzio"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://scottdeluzio.com"
+msgstr ""

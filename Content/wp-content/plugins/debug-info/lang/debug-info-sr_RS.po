@@ -1,0 +1,158 @@
+# Copyright (C) 2014 Debug Info
+# This file is distributed under the same license as the Debug Info package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Debug Info 1.3.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/debug-info\n"
+"POT-Creation-Date: 2014-03-27 20:02:24+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-04-08 12:21+0100\n"
+"Last-Translator: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: debug-info.php:73
+msgid "This information is not available."
+msgstr "Ova informacija nije dostupna"
+
+#: debug-info.php:130
+msgid "WordPress Version: "
+msgstr "WordPress Verzija"
+
+#: debug-info.php:131
+msgid "Current WordPress Theme: "
+msgstr "Trenutna WordPress Tema:"
+
+#: debug-info.php:132
+msgid " version "
+msgstr "verzije"
+
+#: debug-info.php:133
+msgid " Theme Author: "
+msgstr "Autori teme:"
+
+#: debug-info.php:135
+msgid " Theme URI: "
+msgstr "  URI teme:"
+
+#: debug-info.php:137
+msgid "Active Plugins: "
+msgstr "Activni Pluginovi:"
+
+#: debug-info.php:138
+msgid "PHP Version: "
+msgstr "PHP Verzija:"
+
+#: debug-info.php:141
+msgid "MySQL Version: "
+msgstr "MySQL Verzija:"
+
+#: debug-info.php:142
+msgid "Apache Version: "
+msgstr "Apache Verzija:"
+
+#: options.php:11
+msgid "WordPress Debug Info"
+msgstr "WordPress Debug Info"
+
+#: options.php:12
+msgid ""
+"Below is some information about your current WordPress and server setup. "
+"This information may be useful for your technical support, website "
+"developers, and plugin or theme developers who need to diagnose problems on "
+"your site."
+msgstr ""
+"Ispod su neke informacije o vašem trenutnom WordPress i Server pristupu . "
+"Ova informacija može biti korisna za vašu tehničku podršku , sajt "
+"programera , i plugin ili tematskih programerima koji traže dijagnozu "
+"problema na vašem sajtu ."
+
+#: options.php:14
+msgid ""
+"For more detailed PHP server related information, click the Show Details "
+"link below."
+msgstr ""
+"Za detaljnije informacije u vezi servera PHP , kliknite na Prikazati link sa "
+"detaljima ispod ."
+
+#: options.php:15
+msgid "Show Details"
+msgstr "Prikazati detalje"
+
+#: options.php:16
+msgid "Hide Details"
+msgstr "Sakriti detalje"
+
+#: options.php:20
+msgid ""
+"If this plugin has helped you out at all, please consider making a donation "
+"to encourage future updates.<br />Your generosity is appreciated!"
+msgstr ""
+"Ako vam je ovaj plugin pomogao razmislite o donaciji da biste uticali na "
+"budući razvoj.<br />Vaša velikodušnost se ceni!"
+
+#: options.php:24
+msgid "To report any issues with"
+msgstr "Da biste prijavili bilo kakve probleme sa"
+
+#: options.php:24
+msgid "this plugin"
+msgstr "ovim pluginom"
+
+#: options.php:24
+msgid ", please visit the "
+msgstr ", posetite"
+
+#: options.php:24
+msgid "support page on WordPress.org"
+msgstr "stranica za podršku na WordPress.org"
+
+#: options.php:25
+msgid "For all other WordPress support, please check out the following"
+msgstr "Za sve ostale WordPress podrške proverite sledeće"
+
+#: options.php:25
+msgid "site set-up"
+msgstr "nameštanje sajta"
+
+#: options.php:25
+msgid "24x7 support"
+msgstr "24x7 podrška"
+
+#: options.php:25
+msgid ", and other"
+msgstr ", i ostalo"
+
+#: options.php:25
+msgid "WordPress training"
+msgstr "WordPress trening"
+
+#: options.php:25
+msgid "services"
+msgstr "usluge"
+
+#. Plugin Name of the plugin/theme
+msgid "Debug Info"
+msgstr "Debug Info"
+
+#. Plugin URI of the plugin/theme
+msgid "http://oizuled.com/wordpress-plugins/wordpress-debug-info-plugin"
+msgstr "http://oizuled.com/wordpress-plugins/wordpress-debug-info-plugin"
+
+#. Description of the plugin/theme
+msgid ""
+"A plugin to display your server's PHP info and WordPress environment data "
+"for debugging purposes."
+msgstr ""
+"Plugin tda prikazuje  PHP info vašeg servera i WordPress podatke okruženja "
+"za debugging poces."
+
+#. Author of the plugin/theme
+msgid "Scott DeLuzio"
+msgstr "Scott DeLuzio"
+
+#. Author URI of the plugin/theme
+msgid "http://oizuled.com"
+msgstr "http://oizuled.com "

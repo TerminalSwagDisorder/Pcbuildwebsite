@@ -1,0 +1,160 @@
+# Copyright (C) 2014 Debug Info
+# This file is distributed under the same license as the Debug Info package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Debug Info 1.3.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/debug-info\n"
+"POT-Creation-Date: 2014-03-27 20:02:24+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-04-08 10:55+0100\n"
+"Last-Translator: jelena kovacevic <jecajeca260@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#: debug-info.php:73
+msgid "This information is not available."
+msgstr "Esta información no está disponible."
+
+#: debug-info.php:130
+msgid "WordPress Version: "
+msgstr "Versión de WordPress:"
+
+#: debug-info.php:131
+msgid "Current WordPress Theme: "
+msgstr "Tema Actual de WordPress:"
+
+#: debug-info.php:132
+msgid " version "
+msgstr "versión"
+
+#: debug-info.php:133
+msgid " Theme Author: "
+msgstr "Autor del Tema:"
+
+#: debug-info.php:135
+msgid " Theme URI: "
+msgstr "URL del Tema:"
+
+#: debug-info.php:137
+msgid "Active Plugins: "
+msgstr "Plugins Activos:"
+
+#: debug-info.php:138
+msgid "PHP Version: "
+msgstr "Versión de PHP:"
+
+#: debug-info.php:141
+msgid "MySQL Version: "
+msgstr "Versión de MySQL:"
+
+#: debug-info.php:142
+msgid "Apache Version: "
+msgstr "Versión de Apache:"
+
+#: options.php:11
+msgid "WordPress Debug Info"
+msgstr "Información de Depuración de WordPress "
+
+#: options.php:12
+msgid ""
+"Below is some information about your current WordPress and server setup. "
+"This information may be useful for your technical support, website "
+"developers, and plugin or theme developers who need to diagnose problems on "
+"your site."
+msgstr ""
+"Debajo se muestra alguna información acerca de su WordPress actual y su "
+"instalación del servidor. Esta información puede ser útil  para su soporte "
+"técnico, desarrolladores de sitios web, y plugins o desarrolladores de temas "
+"que necesiten diagnosticar problemas en su sitio."
+
+#: options.php:14
+msgid ""
+"For more detailed PHP server related information, click the Show Details "
+"link below."
+msgstr ""
+"Para obtener información más detallada relacionada con el servidor PHP, haga "
+"clic en el vínculo a continuación: (Mostrar detalles)."
+
+#: options.php:15
+msgid "Show Details"
+msgstr "Mostrar Detalles"
+
+#: options.php:16
+msgid "Hide Details"
+msgstr "Ocultar Detalles"
+
+#: options.php:20
+msgid ""
+"If this plugin has helped you out at all, please consider making a donation "
+"to encourage future updates.<br />Your generosity is appreciated!"
+msgstr ""
+"Si este plugin le ha ayudado, por favor considere hacer una donación para "
+"fomentar futuras actualizaciones. <br/> ¡Se agradece su generosidad!."
+
+#: options.php:24
+msgid "To report any issues with"
+msgstr "Para reportar cualquier problema con "
+
+#: options.php:24
+msgid "this plugin"
+msgstr "este plugin"
+
+#: options.php:24
+msgid ", please visit the "
+msgstr ", por favor visite"
+
+#: options.php:24
+msgid "support page on WordPress.org"
+msgstr "página de soporte en WordPress.org"
+
+#: options.php:25
+msgid "For all other WordPress support, please check out the following"
+msgstr ""
+"Para todos los otros tipos de apoyo de WordPress, por favor visite la "
+"siguiente"
+
+#: options.php:25
+msgid "site set-up"
+msgstr "página de configuración"
+
+#: options.php:25
+msgid "24x7 support"
+msgstr "soporte 24x7 "
+
+#: options.php:25
+msgid ", and other"
+msgstr ", y otra"
+
+#: options.php:25
+msgid "WordPress training"
+msgstr "formación en WordPress"
+
+#: options.php:25
+msgid "services"
+msgstr "servicios"
+
+#. Plugin Name of the plugin/theme
+msgid "Debug Info"
+msgstr "Información de depuración"
+
+#. Plugin URI of the plugin/theme
+msgid "http://oizuled.com/wordpress-plugins/wordpress-debug-info-plugin"
+msgstr "http://oizuled.com/wordpress-plugins/wordpress-debug-info-plugin"
+
+#. Description of the plugin/theme
+msgid ""
+"A plugin to display your server's PHP info and WordPress environment data "
+"for debugging purposes."
+msgstr ""
+"Un plugin para mostrar la información de PHP de su servidor y los datos del "
+"entorno de WordPress para propósitos de depuración."
+
+#. Author of the plugin/theme
+msgid "Scott DeLuzio"
+msgstr "Scott Deluzio"
+
+#. Author URI of the plugin/theme
+msgid "http://oizuled.com"
+msgstr "http://oizuled.com"
