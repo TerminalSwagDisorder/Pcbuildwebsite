@@ -1,4 +1,4 @@
-/*! elementor - v3.6.5 - 27-04-2022 */
+/*! elementor - v3.6.6 - 08-06-2022 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -14235,6 +14235,7 @@ ControlDimensionsItemView = ControlBaseUnitsItemView.extend({
       'click @ui.link': 'onLinkDimensionsClicked'
     });
   },
+  // Default value must be 0, because the CSS generator (in dimensions) expects the 4 dimensions to be filled together (or all are empty).
   defaultDimensionValue: 0,
   initialize: function initialize() {
     ControlBaseUnitsItemView.prototype.initialize.apply(this, arguments); // TODO: Need to be in helpers, and not in variable
@@ -14946,7 +14947,9 @@ var ControlIconsView = /*#__PURE__*/function (_ControlMultipleBaseI) {
           event.stopPropagation();
 
           var onConfirm = function onConfirm() {
-            window.location.href = elementor.config.tools_page_link + '&redirect_to=' + encodeURIComponent(document.location.href) + '#tab-fontawesome4_migration';
+            var _elementor$documents$;
+
+            window.location.href = elementor.config.tools_page_link + '&redirect_to_document=' + ((_elementor$documents$ = elementor.documents.getCurrent()) === null || _elementor$documents$ === void 0 ? void 0 : _elementor$documents$.id) + '&_wpnonce=' + elementor.config.tools_page_nonce + '#tab-fontawesome4_migration';
           };
 
           var enableMigrationDialog = elementor.helpers.getSimpleDialog('elementor-enable-fa5-dialog', __('Elementor\'s New Icon Library', 'elementor'), __('Elementor v2.6 includes an upgrade from Font Awesome 4 to 5. In order to continue using icons, be sure to click "Update".', 'elementor') + ' <a href="https://go.elementor.com/fontawesome-migration/" target="_blank">' + __('Learn More', 'elementor') + '</a>', __('Update', 'elementor'), onConfirm);
@@ -32160,6 +32163,21 @@ PanelMenu.addAdminMenu = function () {
     at: 0
   });
   PanelMenu.addItem({
+    name: 'notes',
+    icon: 'eicon-commenting-o',
+    title: __('Notes', 'elementor'),
+    callback: function callback() {
+      elementor.promotion.showDialog({
+        headerMessage: __('Notes', 'elementor'),
+        message: __('With Notes, teamwork gets even better. Stay in sync with comments, feedback & more on your website.', 'elementor'),
+        top: '-3',
+        inlineStart: '+10',
+        element: this.$el,
+        actionURL: 'https://go.elementor.com/go-pro-notes/'
+      });
+    }
+  }, 'navigate_from_page', 'view-page');
+  PanelMenu.addItem({
     name: 'finder',
     icon: 'eicon-search',
     title: __('Finder', 'elementor'),
@@ -34995,7 +35013,9 @@ module.exports = {
 
       if (hasIconsControl) {
         var onConfirm = function onConfirm() {
-          window.location.href = elementor.config.tools_page_link + '&redirect_to=' + encodeURIComponent(document.location.href) + '#tab-fontawesome4_migration';
+          var _elementor$documents$;
+
+          window.location.href = elementor.config.tools_page_link + '&redirect_to_document=' + ((_elementor$documents$ = elementor.documents.getCurrent()) === null || _elementor$documents$ === void 0 ? void 0 : _elementor$documents$.id) + '&_wpnonce=' + elementor.config.tools_page_nonce + '#tab-fontawesome4_migration';
         };
 
         elementor.helpers.getSimpleDialog('elementor-enable-fa5-dialog', __('Elementor\'s New Icon Library', 'elementor'), __('Elementor v2.6 includes an upgrade from Font Awesome 4 to 5. In order to continue using icons, be sure to click "Update".', 'elementor') + ' <a href="https://go.elementor.com/fontawesome-migration/" target="_blank">' + __('Learn More', 'elementor') + '</a>', __('Update', 'elementor'), onConfirm).show();
@@ -35994,8 +36014,8 @@ var _default = /*#__PURE__*/function (_elementorModules$Vie) {
     value: function getDefaultSettings() {
       return {
         selectors: {
-          notice: '#elementor-notice-bar',
-          close: '#elementor-notice-bar__close'
+          notice: '#e-notice-bar',
+          close: '#e-notice-bar__close'
         }
       };
     }
@@ -36372,7 +36392,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
       this.$promotionTitle.text(options.headerMessage);
       this.dialog.setMessage(options.message).setSettings('position', {
         of: options.element,
-        at: (elementorCommon.config.isRTL ? 'left' : 'right') + ' top' + options.top
+        at: (elementorCommon.config.isRTL ? 'left' : 'right') + (options.inlineStart || '') + ' top' + options.top
       });
       return this.dialog.show();
     }

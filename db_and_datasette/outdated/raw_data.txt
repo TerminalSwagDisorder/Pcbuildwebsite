@@ -1,0 +1,25 @@
+﻿(
+
+{'name': 'Intel Core i7-8700K', 'speed': '3.7GHz', 'cores': '6', 'tdp': '95W', 'ratings': '153', 'price': '€484.99', 'id': 'sxDzK8'},
+
+{'name': 'Cooler Master Hyper 212 EVO', 'fan-rpm': '600 - 2000 RPM', 'noise level': '9.0 - 36.0 dbA', 'ratings': '1336', 'price': '€29.90', 'id': 'hmtCmG'}, 
+
+{'name': 'Asus ROG STRIX Z370-E GAMING', 'socket': 'LGA1151', 'form-factor': 'ATX', 'ram-slots': '4', 'max-ram': '64GB', 'ratings': '46', 'price': '€247.25', 'id': '8sRFf7'}, 
+
+{'name': 'Corsair Vengeance LPX', 'speed': 'DDR4-3000', 'type': '288-pin DIMM', 'cas': '15', 'modules': '2x8GB', 'size': '16GB', 'price/gb': '€9.00', 'ratings': '137', 'price': '€143.99', 'id': 'MYH48d'}, 
+
+{'name': 'Western Digital WD10EZEX', 'series': 'Caviar Blue', 'form': '3.5"', 'type': '7200RPM', 'capacity': '1TB', 'cache': '64MB', 'price/gb': '€0.044', 'ratings': '1996', 'price': '€44.41', 'id': 'MwW9TW'}, 
+
+{'name': 'Asus STRIX-GTX1080TI-11G-GAMING', 'series': 'STRIX GAMING', 'chipset': 'GeForce GTX 1080 Ti', 'memory': '11GB', 'core-clock': '1.49GHz', 'ratings': '21', 'price': '', 'id': 'Yr8H99'}, 
+
+{'name': 'EVGA SuperNOVA 650', 'series': 'SuperNOVA G3', 'form': 'ATX', 'efficiency': '80+ Gold', 'watts': '650W', 'modular': 'Full', 'ratings': '60', 'price': '', 'id': 'y88H99'}, 
+
+{'name': 'NZXT H500 (Black)', 'type': 'ATX Mid Tower', 'ext525b': '0', 'int35b': '2', 'power-supply': 'None', 'ratings': '4', 'price': '€85.89', 'id': 'p8x2FT'}, '
+
+{'name': 'Corsair LL120RGB LED (Three Fans With Lighting Node PRO)', 'color': 'Black', 'size': '120mm', 'rpm': '600 - 1500 RPM', 'airflow': '43.2 CFM', 'noise-level': '24.8 dbA', 'ratings': '37', 'price': '€94.80', 'id': '8KFXsY'}, 
+
+{'name': 'TP-Link TG-3468', 'interface': 'PCI-Express x1', 'ports': '1000 Mbit/s', 'ratings': '12', 'price': '€21.98', 'id': 'dQmLrH'}, '
+
+{'name': 'Gigabyte GC-WB867D-I', 'interface': 'PCI-Express x1', 'protocols': '802.11a/b/g/n/ac', 'ratings': '120', 'price': '€35.32', 'id': 'tTdqqs'}
+
+)

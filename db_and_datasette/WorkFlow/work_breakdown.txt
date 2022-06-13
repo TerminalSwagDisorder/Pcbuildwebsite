@@ -1,0 +1,31 @@
+Api (Benjamin):
+	Vecka 1:
+		* SQLite struktur - 1 dag
+		Integrera datan till SQLite - 2 dagar
+	vecka 2:
+		[* SQLite struktur - 1 dag
+		* Integrera datan till SQLite - 1-2 dagar]
+		* Gör så att APIn tar inte produkter utan pris - 1 dag
+		Algoritm (hur sidan ger datorn via queries) - 2 dagar
+		integrera python APIn till HTML - 1 dag
+	vecka 3:
+		Testa så att APIn funkar med sidan - 1 dag
+		Full test - 3 Dagar
+	vecka 4:
+		Demo (Låt människor testa) - 1 dag
+		Fixa om sönder - 2 dagar
+		Sluttest - 1 dag
+Gui (Jonas):
+	vecka 1: 
+		* Meteor HTML struktur - 2 dagar
+		* Meteor CSS bas - 1 dag
+	vecka 2: 
+		* Förtsätt med mera HTML sidor - 2 dagar
+		integrera python APIn till HTML - 2 dagar
+	vecka 3: 
+		* Finjustera layout - 2 dagar
+		Full test - 3 Dagar
+	vecka 4:
+		Demo (Låt människor testa) - 1 dag
+		Fixa om sönder - 2 dagar
+		Sluttest - 1 dag

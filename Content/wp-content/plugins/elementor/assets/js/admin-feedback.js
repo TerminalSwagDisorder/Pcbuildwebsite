@@ -1,4 +1,4 @@
-/*! elementor - v3.6.5 - 27-04-2022 */
+/*! elementor - v3.6.6 - 08-06-2022 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -777,16 +777,13 @@ __webpack_require__(/*! core-js/modules/es6.array.find.js */ "../node_modules/co
                 text: __('Submit & Deactivate', 'elementor'),
                 callback: self.sendFeedback.bind(self)
               });
-
-              if (!elementorAdmin.config.feedback.is_tracker_opted_in) {
-                this.addButton({
-                  name: 'skip',
-                  text: __('Skip & Deactivate', 'elementor'),
-                  callback: function callback() {
-                    self.deactivate();
-                  }
-                });
-              }
+              this.addButton({
+                name: 'skip',
+                text: __('Skip & Deactivate', 'elementor'),
+                callback: function callback() {
+                  self.deactivate();
+                }
+              });
             },
             onShow: function onShow() {
               var $dialogModal = $('#elementor-deactivate-feedback-modal'),

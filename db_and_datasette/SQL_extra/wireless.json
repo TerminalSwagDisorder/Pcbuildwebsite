@@ -1,0 +1,458 @@
+[
+    {
+        "id": "tTdqqs",
+        "interface": "PCI-Express x1",
+        "name": "Gigabyte GC-WB867D-I",
+        "price": "48.07",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "125"
+    },
+    {
+        "id": "Chh9TW",
+        "interface": "PCI-Express x1",
+        "name": "TP-Link TL-WN881ND",
+        "price": "13.72",
+        "protocols": "802.11b/g/n",
+        "ratings": "163"
+    },
+    {
+        "id": "k9ndnQ",
+        "interface": "PCI-Express x1",
+        "name": "Asus PCE-AC51",
+        "price": "29.9",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "5"
+    },
+    {
+        "id": "vwcMnQ",
+        "interface": "PCI-Express x1",
+        "name": "Asus PCE-AC88",
+        "price": "84.55",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "6"
+    },
+    {
+        "id": "8VMFf7",
+        "interface": "PCI-Express x1",
+        "name": "Asus PCE-AC68",
+        "price": "73.81",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "65"
+    },
+    {
+        "id": "KJfmP6",
+        "interface": "PCI-Express x1",
+        "name": "TP-Link Archer T6E AC1300",
+        "price": "46.9",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "16"
+    },
+    {
+        "id": "6Zs8TW",
+        "interface": "PCI-Express x1",
+        "name": "Asus PCE-AC55BT B1",
+        "price": "38.9",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "21"
+    },
+    {
+        "id": "wQmLrH",
+        "interface": "USB 2.0",
+        "name": "TP-Link TL-WN725N",
+        "price": "8.9",
+        "protocols": "802.11b/g/n",
+        "ratings": "37"
+    },
+    {
+        "id": "mbbp99",
+        "interface": "PCI-Express x1",
+        "name": "HP FH971AA",
+        "price": "24.99",
+        "protocols": "802.11b/g/n",
+        "ratings": "0"
+    },
+    {
+        "id": "pxrcCJ",
+        "interface": "PCI-Express x1",
+        "name": "TP-Link Archer T9E",
+        "price": "79.8",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "26"
+    },
+    {
+        "id": "tj2rxr",
+        "interface": "USB 3.0",
+        "name": "Netgear A6210-100PAS",
+        "price": "54.8",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "14"
+    },
+    {
+        "id": "TBL7YJ",
+        "interface": "USB 3.0",
+        "name": "Asus USB-AC68",
+        "price": "69.9",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "1"
+    },
+    {
+        "id": "psdqqs",
+        "interface": "USB 2.0",
+        "name": "TP-Link TL-WN722N",
+        "price": "8.77",
+        "protocols": "802.11b/g/n",
+        "ratings": "18"
+    },
+    {
+        "id": "RZNp99",
+        "interface": "PCI-Express x1",
+        "name": "Asus PCE-N15",
+        "price": "15.9",
+        "protocols": "802.11b/g/n",
+        "ratings": "86"
+    },
+    {
+        "id": "hHdqqs",
+        "interface": "USB 2.0",
+        "name": "Edimax EW-7811Un",
+        "price": "6.99",
+        "protocols": "802.11b/g/n",
+        "ratings": "16"
+    },
+    {
+        "id": "sN8Zxr",
+        "interface": "PCI-Express x1",
+        "name": "TP-Link TL-WN781ND",
+        "price": "14.48",
+        "protocols": "802.11b/g/n",
+        "ratings": "39"
+    },
+    {
+        "id": "w3fp99",
+        "interface": "USB 2.0",
+        "name": "TP-Link Archer T2U",
+        "price": "16.9",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "5"
+    },
+    {
+        "id": "9fQypg",
+        "interface": "PCI-Express x1",
+        "name": "Asus PCE-N10",
+        "price": "9.99",
+        "protocols": "802.11b/g/n",
+        "ratings": "18"
+    },
+    {
+        "id": "dmYXsY",
+        "interface": "USB 3.0",
+        "name": "Asus USB-AC56",
+        "price": "59.9",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "7"
+    },
+    {
+        "id": "X9rcCJ",
+        "interface": "PCI-Express x1",
+        "name": "Asus PCE-AC55BT",
+        "price": "64.48",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "12"
+    },
+    {
+        "id": "YWX2FT",
+        "interface": "USB 2.0",
+        "name": "TP-Link Archer T2UH",
+        "price": "18.53",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "qn3RsY",
+        "interface": "USB 3.0",
+        "name": "TP-Link Archer T4U",
+        "price": "33.8",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "15"
+    },
+    {
+        "id": "3D38TW",
+        "interface": "PCI-Express x1",
+        "name": "D-Link DWA-582",
+        "price": "32.99",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "5"
+    },
+    {
+        "id": "Qtzv6h",
+        "interface": "USB 2.0",
+        "name": "Asus USB-N13",
+        "price": "17.92",
+        "protocols": "802.11b/g/n",
+        "ratings": "20"
+    },
+    {
+        "id": "gWg323",
+        "interface": "USB 2.0",
+        "name": "TP-Link TL-WN823N",
+        "price": "9.99",
+        "protocols": "802.11b/g/n",
+        "ratings": "12"
+    },
+    {
+        "id": "PqCwrH",
+        "interface": "PCI",
+        "name": "TP-Link TL-WN851ND",
+        "price": "26.98",
+        "protocols": "802.11b/g/n",
+        "ratings": "14"
+    },
+    {
+        "id": "wXL7YJ",
+        "interface": "USB 3.0",
+        "name": "Asus USB-AC55",
+        "price": "64.38",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "8t8H99",
+        "interface": "USB 2.0",
+        "name": "TP-Link Archer T1U",
+        "price": "17.62",
+        "protocols": "802.11a/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "fhPzK8",
+        "interface": "Mini-PCI-Express",
+        "name": "Intel 7260",
+        "price": "26",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "1"
+    },
+    {
+        "id": "c8ZFf7",
+        "interface": "USB 2.0",
+        "name": "Asus USB-AC53 NANO",
+        "price": "39.9",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "2sdqqs",
+        "interface": "USB 2.0",
+        "name": "TP-Link TL-WN821N",
+        "price": "7.85",
+        "protocols": "802.11b/g/n",
+        "ratings": "5"
+    },
+    {
+        "id": "G2tCmG",
+        "interface": "USB 2.0",
+        "name": "Asus USB-AC51",
+        "price": "22.85",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "76M323",
+        "interface": "PCI-Express x1",
+        "name": "StarTech PEX867WAC22",
+        "price": "59.92",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "NnkD4D",
+        "interface": "USB 2.0",
+        "name": "Edimax EW-7811UAC",
+        "price": "22.99",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "MN8Zxr",
+        "interface": "USB 2.0",
+        "name": "TP-Link TL-WN8200ND",
+        "price": "19.9",
+        "protocols": "802.11b/g/n",
+        "ratings": "1"
+    },
+    {
+        "id": "Fc9KHx",
+        "interface": "PCI-Express x1",
+        "name": "StarTech PEX300WN2X2",
+        "price": "32.58",
+        "protocols": "802.11b/g/n",
+        "ratings": "1"
+    },
+    {
+        "id": "gZfmP6",
+        "interface": "USB 3.0",
+        "name": "D-Link DWA-192",
+        "price": "48.49",
+        "protocols": "802.11a/g/n/ac",
+        "ratings": "2"
+    },
+    {
+        "id": "xyX2FT",
+        "interface": "USB 3.0",
+        "name": "TP-Link Archer T4UH",
+        "price": "31.89",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "wL6BD3",
+        "interface": "USB 1.0",
+        "name": "StarTech USB150WN1X1W",
+        "price": "11.98",
+        "protocols": "802.11n",
+        "ratings": "0"
+    },
+    {
+        "id": "wbmLrH",
+        "interface": "USB 2.0",
+        "name": "D-Link DWA-131",
+        "price": "9.49",
+        "protocols": "802.11b/g/n",
+        "ratings": "0"
+    },
+    {
+        "id": "tGrG3C",
+        "interface": "PCI-Express x1",
+        "name": "Edimax EW-7612PIn",
+        "price": "17.48",
+        "protocols": "802.11b/g/n",
+        "ratings": "1"
+    },
+    {
+        "id": "994gXL",
+        "interface": "USB 2.0",
+        "name": "StarTech USB150WN1X1",
+        "price": "20.05",
+        "protocols": "802.11b/g/n",
+        "ratings": "0"
+    },
+    {
+        "id": "7MnG3C",
+        "interface": "USB 2.0",
+        "name": "StarTech USB300WN2X2C",
+        "price": "24.46",
+        "protocols": "802.11a/b/g/n",
+        "ratings": "0"
+    },
+    {
+        "id": "YcQypg",
+        "interface": "USB 2.0",
+        "name": "Edimax EW-7811DAC",
+        "price": "34.88",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "CbmLrH",
+        "interface": "USB 2.0",
+        "name": "TRENDnet TEW-648UBM",
+        "price": "17.36",
+        "protocols": "802.11b/g/n",
+        "ratings": "0"
+    },
+    {
+        "id": "kzmLrH",
+        "interface": "USB 3.0",
+        "name": "StarTech USB867WAC22",
+        "price": "51",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "TWMFf7",
+        "interface": "USB 2.0",
+        "name": "Edimax EW-7711MAC",
+        "price": "21.35",
+        "protocols": "802.11a/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "LVbkcf",
+        "interface": "USB 3.0",
+        "name": "AUKEY WF-R12",
+        "price": "43.12",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "dJPKHx",
+        "interface": "USB 2.0",
+        "name": "AVM FRITZ! WLAN Stick AC 430 MU-MIMO",
+        "price": "26.99",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "sTQypg",
+        "interface": "USB 2.0",
+        "name": "IOGEAR GWU627W6",
+        "price": "58.22",
+        "protocols": "802.11b/g/n",
+        "ratings": "0"
+    },
+    {
+        "id": "mtPfrH",
+        "interface": "USB 2.0",
+        "name": "Edimax EW-7722UTn",
+        "price": "11.29",
+        "protocols": "802.11b/g/n",
+        "ratings": "1"
+    },
+    {
+        "id": "pmgPxr",
+        "interface": "PCI-Express x1",
+        "name": "Edimax EW-7822PIC",
+        "price": "52.4",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "wv648d",
+        "interface": "USB 3.0",
+        "name": "IOGEAR GWU735",
+        "price": "63",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "1"
+    },
+    {
+        "id": "tGphP6",
+        "interface": "PCI",
+        "name": "D-Link DWA-525",
+        "price": "38.08",
+        "protocols": "802.11g/n",
+        "ratings": "1"
+    },
+    {
+        "id": "4cCrxr",
+        "interface": "USB 2.0",
+        "name": "StarTech USB433WACDB",
+        "price": "35.02",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "pz2kcf",
+        "interface": "USB 2.0",
+        "name": "TRENDnet TEW-804UB",
+        "price": "37.39",
+        "protocols": "802.11a/b/g/n/ac",
+        "ratings": "0"
+    },
+    {
+        "id": "XQmLrH",
+        "interface": "USB 2.0",
+        "name": "Patriot PCBOWAU2-N",
+        "price": "15",
+        "protocols": "802.11b/g/n",
+        "ratings": "0"
+    }
+]

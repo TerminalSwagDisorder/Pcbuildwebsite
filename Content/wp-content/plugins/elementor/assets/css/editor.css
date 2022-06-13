@@ -1,4 +1,4 @@
-/*! elementor - v3.6.5 - 27-04-2022 */
+/*! elementor - v3.6.6 - 08-06-2022 */
 @charset "UTF-8";
 .elementor-control-unit-1 {
   width: 27px; }
@@ -5271,7 +5271,7 @@ body {
 .elementor-navigator__element-section, .elementor-navigator__element-container {
   background-color: #ffffff; }
 
-#elementor-notice-bar {
+#e-notice-bar {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -5283,35 +5283,44 @@ body {
           align-items: center;
   height: 40px;
   color: #fff;
-  background-color: #6d7882;
-  padding: 0 50px; }
-  #elementor-notice-bar__message {
-    padding-left: 15px;
+  background-color: #93003c;
+  padding: 0 25px; }
+  #e-notice-bar__message {
+    padding-left: 15px; }
+    #e-notice-bar__message a {
+      text-decoration: underline;
+      color: #fff; }
+      #e-notice-bar__message a:hover {
+        color: #d5dadf; }
+  #e-notice-bar__action {
+    padding-left: 25px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
-            flex-grow: 1; }
-    #elementor-notice-bar__message a {
-      text-decoration: underline; }
-  #elementor-notice-bar__action {
+            flex-grow: 1;
     text-transform: uppercase; }
-  #elementor-notice-bar__close {
-    margin: 0 20px;
+    #e-notice-bar__action a {
+      background: white;
+      border-radius: 3px;
+      color: #93003c;
+      padding: 4px 10px;
+      font-size: 11px; }
+      #e-notice-bar__action a:hover {
+        color: #47001d;
+        background: #f1f3f5; }
+  #e-notice-bar__close {
     cursor: pointer; }
-  #elementor-notice-bar i {
+  #e-notice-bar i {
     font-size: 16px;
     opacity: .9; }
-  #elementor-notice-bar a {
-    color: #fff; }
-  #elementor-notice-bar a,
-  #elementor-notice-bar i {
+    #e-notice-bar i:hover {
+      color: #d5dadf; }
+  #e-notice-bar a,
+  #e-notice-bar i {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
-    #elementor-notice-bar a:hover,
-    #elementor-notice-bar i:hover {
-      color: #D4D4D4; }
 
-body:not(.elementor-device-desktop) #elementor-notice-bar {
+body:not(.elementor-device-desktop) #e-notice-bar {
   display: none; }
 
 #elementor-fatal-error-dialog.elementor-preview-loading-error .dialog-header {

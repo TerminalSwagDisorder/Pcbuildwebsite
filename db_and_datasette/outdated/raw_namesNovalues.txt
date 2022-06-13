@@ -1,0 +1,21 @@
+['name', 'speed', 'cores', 'tdp', 'ratings', 'price', 'id']
+
+['name', 'fan-rpm', 'noise level', 'ratings', 'price', 'id']
+
+['name', 'socket', 'form-factor', 'ram-slots', 'max-ram', 'ratings', 'price', 'id']
+
+['name', 'speed', 'type', 'cas', 'modules', 'size', 'price/gb', 'ratings', 'price', 'id']
+
+['name', 'series', 'form', 'type', 'capacity', 'cache', 'price/gb', 'ratings', 'price', 'id']
+
+['name', 'series', 'chipset', 'memory', 'core-clock', 'ratings', 'price', 'id']
+
+['name', 'series', 'form', 'efficiency', 'watts', 'modular', 'ratings', 'price', 'id']
+
+['name', 'type', 'ext525b', 'int35b', 'power-supply', 'ratings', 'price', 'id']
+
+['name', 'color', 'size', 'rpm', 'airflow', 'noise-level', 'ratings', 'price', 'id']
+
+['name', 'interface', 'ports', 'ratings', 'price', 'id']
+
+['name', 'interface', 'protocols', 'ratings', 'price', 'id']

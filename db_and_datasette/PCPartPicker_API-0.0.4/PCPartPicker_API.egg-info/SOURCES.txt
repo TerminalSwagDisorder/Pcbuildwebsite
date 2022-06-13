@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+PCPartPicker_API/__init__.py
+PCPartPicker_API/_pages_data.py
+PCPartPicker_API/pcpartpicker.py
+PCPartPicker_API.egg-info/PKG-INFO
+PCPartPicker_API.egg-info/SOURCES.txt
+PCPartPicker_API.egg-info/dependency_links.txt
+PCPartPicker_API.egg-info/requires.txt
+PCPartPicker_API.egg-info/top_level.txt

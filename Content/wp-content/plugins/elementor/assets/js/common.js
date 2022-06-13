@@ -1,4 +1,4 @@
-/*! elementor - v3.6.5 - 27-04-2022 */
+/*! elementor - v3.6.6 - 08-06-2022 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -4438,7 +4438,7 @@ var Events = /*#__PURE__*/function () {
   (0, _createClass2.default)(Events, [{
     key: "dispatchEvent",
     value: function dispatchEvent(eventData) {
-      if (!elementorCommon.config['event-tracker'].isUserDataShared || !eventData) {
+      if (!eventData) {
         return;
       }
 
