@@ -7,7 +7,7 @@ from sqlalchemy.sql import table, column, select, update, insert, delete
 from sqlalchemy.ext.declarative import *
 from sqlalchemy import create_engine
 engine = create_engine('sqlite:////home/benjaminlinux/github/pcbuildapp/pcbuildapp/pcbuildapp_new_db.db', echo=True, pool_pre_ping=True)
-from PCPartPicker_API import pcpartpicker
+from PCPartPicker_API import pcpartpickerapi
 from PCPartPicker_API import part_lists
 
 
