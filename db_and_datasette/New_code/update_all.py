@@ -42,7 +42,7 @@ def transform(key,value):
     else:
         return value
 
-part_lists.setRegion("de")
+part_lists.set_region("de")
 print("\nRegion changed to De")
 '''
 for i in cpu_info:
