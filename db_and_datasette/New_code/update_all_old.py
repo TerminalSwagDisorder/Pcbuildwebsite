@@ -3,28 +3,25 @@ from time import sleep as sleep
 import json
 import os
 import sqlite3
-import itertools
 from sqlalchemy import *
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql.expression import ColumnClause
 from sqlalchemy.sql import table, column, select, update, insert, delete
 from sqlalchemy.ext.declarative import *
 from sqlalchemy import create_engine
+engine = create_engine('sqlite:///pcbuildwebsite_db.db', echo=True, pool_pre_ping=True)
 
-
+Session = sessionmaker(bind=engine)
+Session.configure(bind=engine)
+session = Session(bind=engine)
 
 fPath = os.path.abspath(os.path.realpath(__file__))
 dPath = os.path.dirname(fPath)
-finPath = dPath + "\\database"
+finPath = dPath + "\\json"
 
 #Create json folder if it does not exist
 if not os.path.exists(finPath):
     os.makedirs(finPath)
-
-engine = create_engine("sqlite:///" + finPath + "\\pcbuildwebsite_db.db", echo=True, pool_pre_ping=True)
-Session = sessionmaker(bind=engine)
-Session.configure(bind=engine)
-session = Session(bind=engine)
 
 #Define metadata information
 metadata = MetaData(bind=engine)
@@ -42,9 +39,9 @@ cpu = Table("cpu", metadata,
     Column("Simultaneous Multithreading", TEXT),
 	Column("Includes CPU Cooler", TEXT),
 	Column("Socket", TEXT),
-	Column("Price", TEXT)
-)
-
+	Column("price", TEXT)
+)    
+    
 pcpartpicker = Scraper()
 print("starting extraction")
 
@@ -64,58 +61,19 @@ for partcategory in searchTerms:
             validpart = pcpartpicker.fetch_product(part.url)
             print("debug 2")
             sleep(3)
-            partname = {
-                "Name" : part.name,
-            }
             partdict = {
-                "Name" : part.name,                
-                "Specs" : validpart.specs,
-                "Price" : part.price,                
+                "Name", part.name : validpart.specs, 
             }
-            partprice = {
-                "Price" : part.price,
-            }            
             print(partdict)
-            #Crude way to delete redundant dict columns
-            validpart.specs.pop("Manufacturer")            
-            validpart.specs.pop("Part #")
-            validpart.specs.pop("Series")
-            validpart.specs.pop("Microarchitecture")
-            validpart.specs.pop("Core Family")
-            validpart.specs.pop("Maximum Supported Memory")
-            validpart.specs.pop("ECC Support")
-            validpart.specs.pop("Packaging")
-            validpart.specs.pop("Performance L1 Cache")
-            validpart.specs.pop("Performance L2 Cache")
-            #validpart.specs.pop("Efficiency L1 Cache")
-            #validpart.specs.pop("Efficiency L2 Cache")            
-            validpart.specs.pop("Lithography")            
-
-            partsfin = dict(itertools.zip_longest(*[iter(validpart.specs)] * 2, fillvalue=""))
-
-            print(partsfin)
             
             #with open(finPath + "\\" + partcategory + ".json", "r", encoding='utf-8') as rf:
             #    data = json.load(rf)
-            #data.append(partdict)                              
-            i = insert(cpu)
-            i = i.values(partname)
-            i = i.values(partsfin)
-            i = i.values(partprice)            
-            session.execute(i)
-            session.commit()            
+            #data.append(partdict)
+            with open(finPath + "\\" + partcategory + ".json", "w", encoding='utf-8') as wf:
+                json.dump(partdict, wf)
                 
             #partdict.popitem()
         sleep(1)
-        
-print("completed")        
-        
-        
-        
-        
-        
-        
-        
                 
 '''
             #second method to append data to json file
@@ -126,7 +84,7 @@ print("completed")
                 file.seek(0)
                 json.dump(data, wf)
 '''
-
+print("completed")
     
 
 '''
