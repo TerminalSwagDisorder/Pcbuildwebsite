@@ -1,4 +1,5 @@
 Note: Scraping products from pcpartpicker.com may result in a temporary IP ban
+Note 2: PyPP seems to be working
 _______
 
 PyPP
