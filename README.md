@@ -1,9 +1,8 @@
-https://pythonguides.com/python-dictionary-of-lists/
-
 Note: Scraping products from pcpartpicker.com may result in a temporary IP ban
 
-Note 2: PyPP seems to be working
+
 _______
+
 
 PyPP
 https://github.com/TerminalSwagDisorder/pypartpicker
