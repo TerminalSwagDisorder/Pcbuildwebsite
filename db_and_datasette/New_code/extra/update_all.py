@@ -4,10 +4,11 @@ import json
 import os
 import sqlite3
 import itertools
+import pickle
 from sqlalchemy import *
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql.expression import ColumnClause
-from sqlalchemy.sql import table, column, select, update, insert, delete
+from sqlalchemy.sql import table, column, select, update, insert, delete, text
 from sqlalchemy.ext.declarative import *
 from sqlalchemy import create_engine
 
@@ -50,20 +51,21 @@ print("starting extraction")
 
 #Add anything you want to find from https://fi.pcpartpicker.com/search/
 #Primary part categories are "processsor", "video card", "cpu cooler", "motherboard", "memory", "internal hard drive", "solid state drive", "power supply", "case"
-searchTerms = ["processor"]
+searchTerms = ["processor i9"]
 
 #Extract data and insert to database
 for partcategory in searchTerms:
     print("starting ", partcategory)
-    parts = pcpartpicker.part_search(partcategory, region="fi")
+    parts = pcpartpicker.part_search(partcategory, limit=5, region="fi")
     
     for part in parts:
         print("debug 1")
         #if float(part.price.strip("€")) >= 1:
-        if not part.price is None:        
+        if not part.price is None:
             validpart = pcpartpicker.fetch_product(part.url)
+
             print("debug 2")
-            sleep(3)
+            sleep(2)
             partname = {
                 "Name" : part.name,
             }
@@ -77,36 +79,50 @@ for partcategory in searchTerms:
             }            
             print(partdict)
             #Crude way to delete redundant dict columns
-            validpart.specs.pop("Manufacturer")            
-            validpart.specs.pop("Part #")
-            validpart.specs.pop("Series")
-            validpart.specs.pop("Microarchitecture")
-            validpart.specs.pop("Core Family")
-            validpart.specs.pop("Maximum Supported Memory")
-            validpart.specs.pop("ECC Support")
-            validpart.specs.pop("Packaging")
-            validpart.specs.pop("Performance L1 Cache")
-            validpart.specs.pop("Performance L2 Cache")
-            #validpart.specs.pop("Efficiency L1 Cache")
-            #validpart.specs.pop("Efficiency L2 Cache")            
-            validpart.specs.pop("Lithography")            
+            try:
+                validpart.specs.pop("Efficiency L1 Cache")
+                validpart.specs.pop("Efficiency L2 Cache")
+                validpart.specs.pop("Manufacturer")            
+                validpart.specs.pop("Part #")
+                validpart.specs.pop("Series")
+                validpart.specs.pop("Microarchitecture")
+                validpart.specs.pop("Core Family")
+                validpart.specs.pop("Maximum Supported Memory")
+                validpart.specs.pop("ECC Support")
+                validpart.specs.pop("Packaging")
+                validpart.specs.pop("Performance L1 Cache")
+                validpart.specs.pop("Performance L2 Cache")
+                validpart.specs.pop("Lithography")
+            except:    
+                validpart.specs.pop("Manufacturer")            
+                validpart.specs.pop("Part #")
+                validpart.specs.pop("Series")
+                validpart.specs.pop("Microarchitecture")
+                validpart.specs.pop("Core Family")
+                validpart.specs.pop("Maximum Supported Memory")
+                validpart.specs.pop("ECC Support")
+                validpart.specs.pop("Packaging")
+                validpart.specs.pop("Performance L1 Cache")
+                validpart.specs.pop("Performance L2 Cache")
+                validpart.specs.pop("Lithography")
 
-            partsfin = dict(itertools.zip_longest(*[iter(validpart.specs)] * 2, fillvalue=""))
-
+            partsfin = [{new_k : new_val[r] for new_k, new_val in validpart.specs.items()} for r in range(1)]
+            pvs = pickle.dumps(validpart.specs)
             print(partsfin)
-            
+
             #with open(finPath + "\\" + partcategory + ".json", "r", encoding='utf-8') as rf:
             #    data = json.load(rf)
             #data.append(partdict)                              
             i = insert(cpu)
             i = i.values(partname)
-            i = i.values(partsfin)
+            sql = i.values(validpart.specs)
             i = i.values(partprice)            
             session.execute(i)
+            session.execute(text(sql))
             session.commit()            
-                
+
             #partdict.popitem()
-        sleep(1)
+        sleep(0.5)
         
 print("completed")        
         
