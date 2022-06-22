@@ -4,7 +4,6 @@ import json
 import os
 import sqlite3
 import itertools
-import pickle
 from sqlalchemy import *
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql.expression import ColumnClause
@@ -55,7 +54,7 @@ searchTerms = ["processor i9"]
 #Extract data and insert to database
 for partcategory in searchTerms:
     print("starting ", partcategory)
-    parts = pcpartpicker.part_search(partcategory, limit=5, region="fi")
+    parts = pcpartpicker.part_search(partcategory, limit=500, region="fi")
     
     for part in parts:
         print("debug 1")
