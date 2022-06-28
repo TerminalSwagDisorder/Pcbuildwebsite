@@ -1,0 +1,26 @@
+[
+    {
+        "Manufacturer": "Intel",
+        "Part #": "BX8071512900K",
+        "Core Count": "16",
+        "Performance Core Clock": "3.2 GHz",
+        "Performance Boost Clock": "5.2 GHz",
+        "TDP": "125 W",
+        "Series": "Intel Core i9",
+        "Microarchitecture": "Alder Lake",
+        "Core Family": "Alder Lake",
+        "Socket": "LGA1700",
+        "Integrated Graphics": "Intel UHD Graphics 770",
+        "Maximum Supported Memory": "128 GB",
+        "ECC Support": "No",
+        "Packaging": "Boxed",
+        "Performance L1 Cache": "8 x 32 kB Instruction",
+        "Efficiency L1 Cache": "8 x 32 kB Instruction",
+        "Performance L2 Cache": "8 x 1.25 MB",
+        "Efficiency L2 Cache": "2 x 2 MB",
+        "L3 Cache": "1 x 30 MB",
+        "Lithography": "10 nm",
+        "Includes CPU Cooler": "No",
+        "Simultaneous Multithreading": "Yes: Hyper-Threading"
+    }
+]
