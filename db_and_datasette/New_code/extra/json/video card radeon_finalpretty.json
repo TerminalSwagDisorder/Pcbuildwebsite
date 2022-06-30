@@ -1,0 +1,20 @@
+{
+    "Manufacturer": "PowerColor",
+    "Part #": "AXRX 6700XT 12GBD6-3DHE/OC",
+    "Chipset": "Radeon RX 6700 XT",
+    "Memory": "12 GB",
+    "Memory Type": "GDDR6",
+    "Core Clock": "2321 MHz",
+    "Boost Clock": "2622 MHz",
+    "Effective Memory Clock": "16000 MHz",
+    "Interface": "PCIe x16",
+    "Color": "Black",
+    "Frame Sync": "FreeSync",
+    "Length": "320 mm",
+    "TDP": "230 W",
+    "Expansion Slot Width": "2",
+    "Cooling": "3 Fans",
+    "External Power": "2 PCIe 8-pin",
+    "HDMI Outputs": "1",
+    "DisplayPort Outputs": "3"
+}

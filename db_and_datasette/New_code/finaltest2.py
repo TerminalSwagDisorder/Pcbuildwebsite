@@ -20,7 +20,7 @@ finPath = dPath + "\\database"
 if not os.path.exists(finPath):
     os.makedirs(finPath)
 
-engine = create_engine("sqlite:///" + finPath + "\\pcbuildwebsite_db.db", echo=True, pool_pre_ping=True)
+engine = create_engine("sqlite:///" + finPath + "\\pcbuildwebsite_db_test.db", echo=True, pool_pre_ping=True)
 Session = sessionmaker(bind=engine)
 Session.configure(bind=engine)
 session = Session(bind=engine)
@@ -28,7 +28,7 @@ session = Session(bind=engine)
 #Define metadata information
 metadata = MetaData(bind=engine)
 
-#Create table in database       
+#Table       
 cpu = Table("cpu", metadata,
 	Column("id", INTEGER, primary_key=True, autoincrement=True),
 	Column("Name", TEXT),
@@ -182,7 +182,7 @@ searchTerms = ["processor amd", "processor intel", "video card gtx", "video card
 #Extract data and insert to database
 for partcategory in searchTerms:
     print("\nstarting", partcategory)
-    parts = pcpartpicker.part_search(partcategory, limit=750, region="fi")
+    parts = pcpartpicker.part_search(partcategory, limit=10, region="fi")
     
     for part in parts:
         print("debug 1")
@@ -213,13 +213,15 @@ for partcategory in searchTerms:
             
             #Delete unecessary dict columns    
             delcol = ["Efficiency L1 Cache", "Efficiency L2 Cache", "Part #", "Series", "Microarchitecture", "Core Family", "Maximum Supported Memory", "ECC Support", "Packaging", "Performance L1 Cache", "Performance L2 Cache", "Lithography", "Frame Sync", "External Power", "HDMI Outputs", "DVI-D Dual Link Outputs", "DisplayPort Outputs", "CPU Socket", "Memory Speed", "PCI Slots", "Mini-PCIe Slots", "Half Mini-PCIe Slots", "Mini-PCIe / mSATA Slots", "mSATA Slots", "USB 2.0 Headers (Single Port)", "Supports ECC", "Price / GB", "First Word Latency", "Timing", "Model", "Front Panel USB", "Drive Bays", "Expansion Slots", "SLI/CrossFire", "Onboard Video", "Output"]
-                        
+            
+            #[specsdict.pop(column) for column in delcol]
+            
             for column in delcol:
                 try:
                     specsdict.pop(column)
                 except:
                     continue
-
+                    
             print(partname, specsdict, partprice)
             print("\npartcategory =", partcategory)
             
@@ -281,7 +283,7 @@ for partcategory in searchTerms:
             i = i.values(parturl)
             session.execute(i)
             session.commit()     
-            
+
 
         sleep(0.5)
         

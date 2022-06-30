@@ -1,0 +1,20 @@
+{
+    "Manufacturer": "Corsair",
+    "Model": "SF750",
+    "Part #": "CP-9020186-NA",
+    "Form Factor": "SFX",
+    "Efficiency Rating": "80+ Platinum",
+    "Wattage": "750 W",
+    "Length": "100 mm",
+    "Modular": "Full",
+    "Type": "SFX12V",
+    "Fanless": "No",
+    "ATX Connectors": "0",
+    "EPS Connectors": "2",
+    "PCIe 12-Pin Connectors": "0",
+    "PCIe 8-Pin Connectors": "0",
+    "PCIe 6+2-Pin Connectors": "4",
+    "PCIe 6-Pin Connectors": "0",
+    "SATA Connectors": "8",
+    "Molex 4-Pin Connectors": "3"
+}

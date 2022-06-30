@@ -1,0 +1,11 @@
+{
+    "Manufacturer": "Seagate",
+    "Part #": "ST4000NE001",
+    "Capacity": "4 TB",
+    "Price / GB": "\u20ac0.040",
+    "Type": "7200RPM",
+    "Cache": "256 MB",
+    "Form Factor": "3.5",
+    "Interface": "SATA 6.0 Gb/s",
+    "NVME": "No"
+}

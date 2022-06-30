@@ -15,12 +15,12 @@ if not os.path.exists(finPath):
 pcpartpicker = Scraper()
 print("starting extraction")
 
-
-searchTerms = ["processor i9"]
+#Primary part categories are "processsor", "video card", "cpu cooler", "motherboard", "memory", "internal hard drive", "solid state drive", "power supply", "case"
+searchTerms = ["video card gtx", "video card rtx", "video card radeon", "cpu cooler", "motherboard", "memory ddr4", "memory ddr5", "memory ddr3", "internal hard drive", "solid state drive 2.5", "solid state drive m.2", "power supply", "atx case", "itx case", "htpc case"]
 
 for partcategory in searchTerms:
     print("starting ", partcategory)
-    parts = pcpartpicker.part_search(partcategory, limit=1, region="fi")
+    parts = pcpartpicker.part_search(partcategory, limit=10, region="fi")
     
     for part in parts:
         print("debug 1")
@@ -28,7 +28,7 @@ for partcategory in searchTerms:
         if not part.price is None:        
             validpart = pcpartpicker.fetch_product(part.url)
             print("debug 2")
-            sleep(1)
+            sleep(2)
             partdict = {
                 "Name" : part.name,
                 "Specs" : validpart.specs, 
@@ -69,14 +69,14 @@ for partcategory in searchTerms:
             #data.append(partdict)
             with open(finPath + "\\" + partcategory + ".json", "w", encoding='utf-8') as wf:
                 json.dump(validpart.specs, wf)
-            with open(finPath + "\\" + partcategory + "_2.json", "w", encoding='utf-8') as wf:
-                json.dump(vs, wf)
-            with open(finPath + "\\" + partcategory + "_pretty.json", "w", encoding='utf-8') as wf:
-                json.dump(validpart.specs, wf, indent=4)
-            with open(finPath + "\\" + partcategory + "_2pretty.json", "w", encoding='utf-8') as wf:
-                json.dump(vs, wf, indent=4)
-            with open(finPath + "\\" + partcategory + "_final.json", "w", encoding='utf-8') as wf:
-                json.dump(specsdict, wf)
+            #with open(finPath + "\\" + partcategory + "_2.json", "w", encoding='utf-8') as wf:
+            #    json.dump(vs, wf)
+            #with open(finPath + "\\" + partcategory + "_pretty.json", "w", encoding='utf-8') as wf:
+            #    json.dump(validpart.specs, wf, indent=4)
+            #with open(finPath + "\\" + partcategory + "_2pretty.json", "w", encoding='utf-8') as wf:
+            #    json.dump(vs, wf, indent=4)
+            #with open(finPath + "\\" + partcategory + "_final.json", "w", encoding='utf-8') as wf:
+            #    json.dump(specsdict, wf)
             with open(finPath + "\\" + partcategory + "_finalpretty.json", "w", encoding='utf-8') as wf:
                 json.dump(specsdict, wf, indent=4)
                 
@@ -87,14 +87,7 @@ for partcategory in searchTerms:
             #partdict.popitem()
 
                 
-'''
-            #second method to append data to json file
-            
-            with open(finPath + "\\" + partcategory + ".json", "r+", encoding='utf-8') as wf:
-                data = json.load(wf)
-                data.append(partdict)
-                file.seek(0)
-                json.dump(data, wf)
-'''
+            sleep(0.5)
+
 print("completed")
     
