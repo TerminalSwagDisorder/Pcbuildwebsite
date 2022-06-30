@@ -177,12 +177,13 @@ print("starting extraction\n")
 
 #Add anything you want to find from https://fi.pcpartpicker.com/search/
 #Primary part categories are "processsor", "video card", "cpu cooler", "motherboard", "memory", "internal hard drive", "solid state drive", "power supply", "case"
-searchTerms = ["processor amd", "processor intel", "video card gtx", "video card rtx", "video card radeon", "cpu cooler", "motherboard", "memory ddr4", "memory ddr5", "memory ddr3", "internal hard drive", "solid state drive 2.5", "solid state drive m.2", "power supply", "atx case", "itx case", "htpc case"]
+searchTerms = ["processor amd ryzen", "processor intel celeron", "processor intel pentium", "processor intel core i3", "processor intel core i5", "processor intel core i7", "processor intel core i9", "video card gtx", "video card rtx", "video card radeon", "cpu cooler", "motherboard", "memory ddr4", "memory ddr5", "memory ddr3", "internal hard drive", "solid state drive 2.5", "solid state drive m.2", "power supply", "atx case", "itx case", "htpc case"]
 
 #Extract data and insert to database
 for partcategory in searchTerms:
     print("\nstarting", partcategory)
-    parts = pcpartpicker.part_search(partcategory, limit=750, region="fi")
+    #A limit of 600 or below is ideal to not be rate limited by PCPP
+    parts = pcpartpicker.part_search(partcategory, limit=550, region="fi")
     
     for part in parts:
         print("debug 1")
@@ -191,7 +192,8 @@ for partcategory in searchTerms:
             validpart = pcpartpicker.fetch_product(part.url)
 
             print("debug 2")
-            sleep(2)
+            #Need to wait a bit to also not be rate limited by PCPP
+            sleep(3)
             partname = {
                 "Name" : part.name,
             }
@@ -212,7 +214,7 @@ for partcategory in searchTerms:
                 specsdict[key] = value
             
             #Delete unecessary dict columns    
-            delcol = ["Efficiency L1 Cache", "Efficiency L2 Cache", "Part #", "Series", "Microarchitecture", "Core Family", "Maximum Supported Memory", "ECC Support", "Packaging", "Performance L1 Cache", "Performance L2 Cache", "Lithography", "Frame Sync", "External Power", "HDMI Outputs", "DVI-D Dual Link Outputs", "DisplayPort Outputs", "CPU Socket", "Memory Speed", "PCI Slots", "Mini-PCIe Slots", "Half Mini-PCIe Slots", "Mini-PCIe / mSATA Slots", "mSATA Slots", "USB 2.0 Headers (Single Port)", "Supports ECC", "Price / GB", "First Word Latency", "Timing", "Model", "Front Panel USB", "Drive Bays", "Expansion Slots", "SLI/CrossFire", "Onboard Video", "Output"]
+            delcol = ["Efficiency L1 Cache", "Efficiency L2 Cache", "Part #", "Series", "Microarchitecture", "Core Family", "Maximum Supported Memory", "ECC Support", "Packaging", "Performance L1 Cache", "Performance L2 Cache", "Lithography", "Frame Sync", "External Power", "HDMI Outputs", "DVI-D Dual Link Outputs", "DisplayPort Outputs", "CPU Socket", "Memory Speed", "PCI Slots", "Mini-PCIe Slots", "Half Mini-PCIe Slots", "Mini-PCIe / mSATA Slots", "mSATA Slots", "USB 2.0 Headers (Single Port)", "Supports ECC", "Price / GB", "First Word Latency", "Timing", "Model", "Front Panel USB", "Drive Bays", "Expansion Slots", "SLI/CrossFire", "Onboard Video", "Output", "HDMI 2.0b Outputs", "DisplayPort 1.4 Outputs"]
                         
             for column in delcol:
                 try:
@@ -224,11 +226,26 @@ for partcategory in searchTerms:
             print("\npartcategory =", partcategory)
             
             #Insert into database
-            if partcategory == "processor amd" :
+            if partcategory == "processor amd ryzen" :
                 i = insert(cpu)
                 
-            elif partcategory == "processor intel":
+            elif partcategory == "processor intel celeron":
                 i = insert(cpu) 
+                
+            elif partcategory == "processor intel pentium":
+                i = insert(cpu)
+                
+            elif partcategory == "processor intel core i3":
+                i = insert(cpu)
+                
+            elif partcategory == "processor intel core i5":
+                i = insert(cpu)
+                
+            elif partcategory == "processor intel core i7":
+                i = insert(cpu)
+                
+            elif partcategory == "processor intel core i9":
+                i = insert(cpu)
                 
             elif partcategory == "video card gtx":
                 i = insert(gpu)
@@ -282,7 +299,7 @@ for partcategory in searchTerms:
             session.execute(i)
             session.commit()     
             
-
-        sleep(0.5)
+        #Wait here again just in case
+        sleep(1)
         
 print("\n\nCompleted")
