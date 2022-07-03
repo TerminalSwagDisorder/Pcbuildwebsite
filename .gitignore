@@ -2,3 +2,5 @@
 site_settings.txt
 php_extensions.txt
 db_and_datasette/Old_code
+db_and_datasette/New_code/Redundant
+db_and_datasette/New_code/extra

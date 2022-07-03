@@ -177,13 +177,13 @@ print("starting extraction\n")
 
 #Add anything you want to find from https://fi.pcpartpicker.com/search/
 #Primary part categories are "processsor", "video card", "cpu cooler", "motherboard", "memory", "internal hard drive", "solid state drive", "power supply", "case"
-searchTerms = [ "cpu cooler", "motherboard", "memory ddr4", "memory ddr5", "memory ddr3", "internal hard drive", "solid state drive 2.5", "solid state drive m.2", "power supply", "atx case", "itx case", "htpc case"]
-#"processor amd ryzen", "processor intel celeron", "processor intel pentium", "processor intel core i3", "processor intel core i5", "processor intel core i7", "processor intel core i9", "video card gtx", "video card rtx", "video card radeon",
+searchTerms = ["video card gtx", "video card rtx", "video card radeon", "processor amd ryzen", "processor intel celeron", "processor intel pentium", "processor intel core i3", "processor intel core i5", "processor intel core i7", "processor intel core i9", "cpu cooler", "motherboard", "memory ddr4", "memory ddr5", "memory ddr3", "internal hard drive",  "solid state drive 2.5", "solid state drive m.2", "power supply certified", "atx case", "itx case", "htpc case"]
+
 #Extract data and insert to database
 for partcategory in searchTerms:
     print("\nstarting", partcategory)
-    #A limit of 600 or below is ideal to not be rate limited by PCPP
-    parts = pcpartpicker.part_search(partcategory, limit=550, region="fi")
+    #A limit of 500 or below is ideal to try to not be rate limited by PCPP
+    parts = pcpartpicker.part_search(partcategory, limit=500, region="fi")
     
     for part in parts:
         print("debug 1")
@@ -193,7 +193,9 @@ for partcategory in searchTerms:
 
             print("debug 2")
             #Need to wait a bit to also not be rate limited by PCPP
-            sleep(4)
+            #sleep(1)
+            sleep(3)
+            
             partname = {
                 "Name" : part.name,
             }
@@ -214,16 +216,16 @@ for partcategory in searchTerms:
                 specsdict[key] = value
             
             #Delete unecessary dict columns    
-            delcol = ["Efficiency L1 Cache", "Efficiency L2 Cache", "Part #", "Series", "Microarchitecture", "Core Family", "Maximum Supported Memory", "ECC Support", "Packaging", "Performance L1 Cache", "Performance L2 Cache", "Lithography", "Frame Sync", "External Power", "HDMI Outputs", "DVI-D Dual Link Outputs", "DisplayPort Outputs", "CPU Socket", "Memory Speed", "PCI Slots", "Mini-PCIe Slots", "Half Mini-PCIe Slots", "Mini-PCIe / mSATA Slots", "mSATA Slots", "USB 2.0 Headers (Single Port)", "Supports ECC", "Price / GB", "First Word Latency", "Timing", "Model", "Front Panel USB", "Drive Bays", "Expansion Slots", "SLI/CrossFire", "Onboard Video", "Output", "HDMI 2.0b Outputs", "DisplayPort 1.4 Outputs", "DisplayPort 1.4a Outputs", "HDMI 2.1 Outputs", "VirtualLink Outputs", "Bearing"]
+            delcol = ["Efficiency L1 Cache", "Efficiency L2 Cache", "Part #", "Series", "Microarchitecture", "Core Family", "Maximum Supported Memory", "ECC Support", "Packaging", "Performance L1 Cache", "Performance L2 Cache", "Lithography", "Frame Sync", "External Power", "HDMI Outputs", "DVI-D Dual Link Outputs", "DisplayPort Outputs", "CPU Socket", "Memory Speed", "PCI Slots", "Mini-PCIe Slots", "Half Mini-PCIe Slots", "Mini-PCIe / mSATA Slots", "mSATA Slots", "USB 2.0 Headers (Single Port)", "Supports ECC", "Price / GB", "First Word Latency", "Timing", "Model", "Front Panel USB", "Drive Bays", "Expansion Slots", "SLI/CrossFire", "Onboard Video", "Output", "HDMI 2.0b Outputs", "DisplayPort 1.4 Outputs", "DisplayPort 1.4a Outputs", "HDMI 2.1 Outputs", "VirtualLink Outputs", "Bearing", "SSD NAND Flash Type", "Power Loss Protection", "SSD Controller", "Efficiency"]
                         
             for column in delcol:
                 try:
                     specsdict.pop(column)
                 except:
                     continue
-
-            print(partname, specsdict, partprice)
+                    
             print("\npartcategory =", partcategory)
+            print(partname, specsdict, partprice, "\n")
             
             #Insert into database
             if partcategory == "processor amd ryzen" :
@@ -280,7 +282,7 @@ for partcategory in searchTerms:
             elif partcategory == "solid state drive m.2":
                 i = insert(storage)
                 
-            elif partcategory == "power supply":
+            elif partcategory == "power supply certified":
                 i = insert(psu)
                 
             elif partcategory == "atx case":
@@ -300,6 +302,7 @@ for partcategory in searchTerms:
             session.commit()     
             
         #Wait here again just in case
-        sleep(1)
+        #sleep(4)
+        sleep(10)
         
 print("\n\nCompleted")

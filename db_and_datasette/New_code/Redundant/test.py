@@ -3,7 +3,6 @@
 from PCPartPicker_API import pcpartpicker
 
 #print("Total CPU pages:", pcpartpicker.lists.total_pages("cpu"))
-
 cpu_info = pcpartpicker.productLists.getProductList("cpu", 1)
 
 # Print the names and prices of all the CPUs on the page
