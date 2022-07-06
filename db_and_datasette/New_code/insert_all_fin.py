@@ -216,7 +216,7 @@ for partcategory in searchTerms:
                 specsdict[key] = value
             
             #Delete unecessary dict columns    
-            delcol = ["Efficiency L1 Cache", "Efficiency L2 Cache", "Part #", "Series", "Microarchitecture", "Core Family", "Maximum Supported Memory", "ECC Support", "Packaging", "Performance L1 Cache", "Performance L2 Cache", "Lithography", "Frame Sync", "External Power", "HDMI Outputs", "DVI-D Dual Link Outputs", "DisplayPort Outputs", "CPU Socket", "Memory Speed", "PCI Slots", "Mini-PCIe Slots", "Half Mini-PCIe Slots", "Mini-PCIe / mSATA Slots", "mSATA Slots", "USB 2.0 Headers (Single Port)", "Supports ECC", "Price / GB", "First Word Latency", "Timing", "Model", "Front Panel USB", "Drive Bays", "Expansion Slots", "SLI/CrossFire", "Onboard Video", "Output", "HDMI 2.0b Outputs", "DisplayPort 1.4 Outputs", "DisplayPort 1.4a Outputs", "HDMI 2.1 Outputs", "VirtualLink Outputs", "Bearing", "SSD NAND Flash Type", "Power Loss Protection", "SSD Controller", "Efficiency"]
+            delcol = ["Efficiency L1 Cache", "Efficiency L2 Cache", "Part #", "Series", "Microarchitecture", "Core Family", "Maximum Supported Memory", "ECC Support", "Packaging", "Performance L1 Cache", "Performance L2 Cache", "Lithography", "Frame Sync", "External Power", "HDMI Outputs", "DVI-D Dual Link Outputs", "DisplayPort Outputs", "CPU Socket", "Memory Speed", "PCI Slots", "Mini-PCIe Slots", "Half Mini-PCIe Slots", "Mini-PCIe / mSATA Slots", "mSATA Slots", "USB 2.0 Headers (Single Port)", "Supports ECC", "Price / GB", "First Word Latency", "Timing", "Model", "Front Panel USB", "Drive Bays", "Expansion Slots", "SLI/CrossFire", "Onboard Video", "Output", "HDMI 2.0b Outputs", "DisplayPort 1.4 Outputs", "DisplayPort 1.4a Outputs", "HDMI 2.1 Outputs", "VirtualLink Outputs", "Bearing", "SSD NAND Flash Type", "Power Loss Protection", "SSD Controller", "Efficiency", "Includes Cooler"]
                         
             for column in delcol:
                 try:
@@ -303,6 +303,6 @@ for partcategory in searchTerms:
             
         #Wait here again just in case
         #sleep(4)
-        sleep(10)
+        sleep(8)
         
 print("\n\nCompleted")
