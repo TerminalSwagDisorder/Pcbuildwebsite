@@ -1,0 +1,34 @@
+[
+    {
+        "name": "cpu",
+        "seq": 71
+    },
+    {
+        "name": "case",
+        "seq": 377
+    },
+    {
+        "name": "cpu cooler",
+        "seq": 236
+    },
+    {
+        "name": "gpu",
+        "seq": 122
+    },
+    {
+        "name": "memory",
+        "seq": 337
+    },
+    {
+        "name": "storage",
+        "seq": 301
+    },
+    {
+        "name": "psu",
+        "seq": 147
+    },
+    {
+        "name": "motherboard",
+        "seq": 216
+    }
+]
