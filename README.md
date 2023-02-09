@@ -1,3 +1,7 @@
+You must specify your own cookie and user-agent value when creating the scraper instance. 
+Like this:
+`pcpartpicker = Scraper(headers={ "cookie": "your cookie", "user-agent": "your user-agent" })`
+
 The scraper is fully functional, however be warned that should you scrape too fast or too much, then pcpartpicker.com will slow your requests down by making you verify you're a human. This is why you shouldn't exceed a limit of 600 (preferably even 500) when scraping separate parts and also why you should have at the very least a sleep time of 3 (preferably even more).
 
 The search terms I found to be most beneficial and optimal are currently on the "searchTerms" list, however you can freely change them, and the primary categories are commented on top of the list.
